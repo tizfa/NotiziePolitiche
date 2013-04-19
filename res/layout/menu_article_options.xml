@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_article_options_read_state"
+          android:icon="@drawable/article_read_state"
+          android:title="@string/menu_article_options_read_state" />
+    <item android:id="@+id/menu_article_options_state"
+          android:icon="@drawable/article_state"
+          android:title="@string/menu_article_options_state" />
+</menu>

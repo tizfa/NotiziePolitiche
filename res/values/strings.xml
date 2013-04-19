@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name_lite">Notizie Politiche Lite</string>
+	<string name="app_name_full">Notizie Politiche</string>
+	<string name="app_title_categories">Lista dei partiti politici</string>
+	<string name="party_status_new">%d nuove news da leggere</string>
+	<string name="party_status_nomessagges">Non ci sono nuove news da leggere</string>
+	<string name="brief_notification_text">%1$s: nuove news da leggere
+	</string>
+	<string name="long_notification_text">Ci sono %s nuove news da leggere</string>
+	<string name="long_title_notification_text">%1$s: nuovi articoli</string>
+	<string name="waiting_messagge">Attendere per favore</string>
+	<string name="waiting_messagge_application">Applicazione in corso di inizializzazione...
+	</string>
+	<string name="retrieving_news_messagge">Sto recuperando gli articoli richiesti...</string>
+	<string name="marking_all_messages_as_read">Sto marcando tutti i messaggi come letti...
+	</string>
+	<string name="create_initial_data">Questa è la prima esecuzione. Creo i dati
+		iniziali...</string>
+	<string name="no_news_shown">Con il filtro corrente non ci sono articoli da
+		visualizzare</string>
+	<string name="exit_question">Il programma e il servizio di gestione automatica
+		dei dati saranno terminati. Sei sicuro di voler procedere?
+	</string>
+	<string name="software_info_title">Informazioni sul software</string>
+	<string name="software_info_about">%1$s\nver. %2$s</string>
+	<string name="share_subject">Articolo di interesse</string>
+	<string name="share_title">Condividi la notizia</string>
+	<string name="no_network_connection">La connessione Internet non è al momento
+		disponibile</string>
+	<string name="number_range_error_validation">Errore: il valore deve essere compreso tra %1$d e
+		%2$d</string>
+	<string name="functionality_not_available">Spiacente, ma la funzionalità richiesta è disponibile solo sull\'applicazione \"%1$s\". Se vuoi scaricarla, clicca sul pulsante \"Vai sul Market\".</string>
+	<string name="go_to_market">Vai sul Market</string>
+	<string name="search_hint">Cerca all\'interno delle news di politica memorizzate sul dispositivo</string>
+	<string name="query_hint_box">Parole di interesse</string>
+	<string name="no_data_in_db">Il DB dell\'applicazione non contiene alcuna notizia. Per visualizzare nuove notizie è necessario aggiornare i dati dei vari partiti (tramite il menu contestuale sul partito di interesse 
+	oppure attarverso la voce \"Aggiorna tutti\" del menu globale dell\'applicazione).</string>
+	<string name="ok_btn">Ok</string>
+</resources>

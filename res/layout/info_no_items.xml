@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:padding="5dip" android:visibility="gone" android:background="#E0E0E0">
+
+
+        <ImageView
+                android:id="@+id/infoNoItemsImage"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@drawable/info"
+        >
+        </ImageView>
+
+
+        <TextView
+                android:text="@string/no_news_shown"
+                android:layout_marginLeft="8dip"
+                android:textSize="12sp"
+                android:id="@+id/infoNoItemsText"
+                android:layout_toRightOf="@id/infoNoItemsImage" android:textColor="#212121"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" weight=""></TextView>
+        
+</RelativeLayout>

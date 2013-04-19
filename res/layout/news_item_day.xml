@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="30dp"
+	android:padding="5dip" android:id="@+id/itemDayID" 
+	android:background="@drawable/bitmap_day" >
+
+
+	<TextView android:text="Lun 15/12/2010" android:textSize="14sp"
+		android:id="@+id/newsItemDay"  android:layout_height="fill_parent"
+		android:singleLine="true" android:scrollHorizontally="false"
+		 android:layout_width="wrap_content"
+		android:layout_centerHorizontal="true" android:textColor="#000000">
+	</TextView>
+</RelativeLayout>

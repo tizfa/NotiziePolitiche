@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/catRefreshData">
+		<CheckBoxPreference android:title="@string/startServiceOnBoot_title"
+			android:defaultValue="false" android:summary="@string/startServiceOnBoot_summary"
+			android:key="@string/keyStartServiceOnBoot" />
+		<CheckBoxPreference android:title="@string/autoRefreshData_title"
+			android:defaultValue="true" android:summary="@string/autoRefreshData_summary"
+			android:key="@string/keyAutoRefreshData" />
+		<EditTextPreference android:enabled="true"
+			android:persistent="true" android:summary="@string/retrieveFeedsInterval_summary"
+			android:defaultValue="60" android:title="@string/retrieveFeedsInterval_title"
+			android:key="@string/keyRetrieveFeedsInterval" android:numeric="integer" />
+		<CheckBoxPreference android:title="@string/showNotification_title"
+			android:defaultValue="true" android:summary="@string/showNotification_summary"
+			android:key="@string/keyShowNotification" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/catArticlesHandling">
+		<PreferenceScreen
+                android:key="@string/keyAspectStyle"
+                android:title="@string/aspectStyle_title"
+                android:summary="@string/aspectStyle_summary">
+                <EditTextPreference
+                        android:persistent="true" android:summary="@string/newsArticleTitleFontSize_summary"
+                        android:title="@string/newsArticleTitleFontSize_title"
+                        android:key="@string/keyNewsArticleTitleFontSize" android:numeric="integer" />
+                <EditTextPreference
+                        android:persistent="true" android:summary="@string/newsArticleDescriptionFontSize_summary"
+                        android:title="@string/newsArticleDescriptionFontSize_title"
+                        android:key="@string/keyNewsArticleDescriptionFontSize" android:numeric="integer" />
+        </PreferenceScreen>
+		<EditTextPreference android:enabled="true"
+			android:persistent="true" android:summary="@string/removeExpiredData_summary"
+			android:defaultValue="60" android:title="@string/removeExpiredData_title"
+			android:key="@string/keyRemoveExpiredData" android:numeric="integer" />
+		<CheckBoxPreference android:title="@string/trashExpiredArticlesNotRead_title"
+			android:defaultValue="false" android:summary="@string/trashExpiredArticlesNotRead_summary"
+			android:key="@string/keyTrashExpiredArticlesNotRead" />	
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Informazioni" android:key="@string/keyInfoCategory">
+		<Preference android:title="@string/buyFullVersion_title"
+			android:key="@string/keyBuyFullVersion" />
+		<Preference android:title="@string/infoOnSoftware_title" android:visibility="gone"
+			android:key="@string/keyInfoOnSoftware" />
+	</PreferenceCategory>
+</PreferenceScreen>

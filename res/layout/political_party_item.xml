@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:padding="5dip" >
+
+        <ImageView
+                android:id="@+id/partyImage"
+                android:layout_width="52dip"
+                android:layout_height="52dip"
+        >
+        </ImageView>
+
+
+        <TextView
+                android:text="Politic Party Name"
+                android:layout_marginLeft="8dip"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/partyName"
+                android:layout_toRightOf="@id/partyImage" android:textColor="#212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" weight=""></TextView>
+        <TextView
+                android:text="Status"
+                android:textSize="12sp"
+                android:id="@+id/status"
+                android:textColor="#212121"
+                android:layout_below="@+id/partyName"
+                android:layout_toRightOf="@id/partyImage"
+                android:layout_marginLeft="8dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+               android:scrollHorizontally="false"
+                >
+        </TextView>
+        <ProgressBar android:id="@+id/partyUpdateProgress"
+     android:layout_width="wrap_content" android:layout_marginRight="5dp"
+     android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse" android:indeterminate="false"
+      android:layout_alignParentRight="true" android:layout_centerVertical="true" android:visibility="invisible"/>
+</RelativeLayout>

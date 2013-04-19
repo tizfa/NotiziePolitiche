@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="60dp"
+	android:padding="5dip" android:id="@+id/itemArticleID">
+
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="45dp" android:layout_height="wrap_content"
+		android:id="@+id/newsGroupTime" android:background="@drawable/background_time_news">
+
+		<TextView android:text="10 Gen" android:layout_marginLeft="5dip"
+			android:textSize="11sp" android:id="@+id/newsDay"
+			android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#3D3D3D"></TextView>
+
+
+		<TextView android:text="2010" android:layout_marginLeft="5dip"
+			android:textSize="11sp" android:id="@+id/newsYear"
+			android:layout_below="@id/newsDay" android:layout_centerHorizontal="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#3D3D3D"></TextView>
+
+		<TextView android:text="17:23" android:layout_marginLeft="5dip"
+			android:textSize="11sp" android:textStyle="italic" android:id="@+id/newsTime"
+			android:layout_below="@id/newsYear" android:layout_marginTop="8dp"
+			android:layout_centerHorizontal="true" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:textColor="#3D3D3D" android:gravity="center_horizontal"></TextView>
+	</RelativeLayout>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="45dp" android:layout_height="wrap_content"
+		android:id="@+id/newsGroupRead" android:layout_below="@id/newsGroupTime">
+		<CheckBox android:id="@+id/checkRead" android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			android:button="@drawable/news_read_selector" android:focusable="false" android:layout_centerInParent="true" 
+			/>
+	</RelativeLayout>
+
+	<TextView android:text="News Title" android:layout_marginLeft="8dip"
+		android:textSize="12sp" android:textStyle="bold" android:id="@+id/newsTitle"
+		android:textColor="#212121" android:layout_toRightOf="@+id/newsGroupTime"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+
+	<TextView android:text="News Description" android:textSize="11sp"
+		android:id="@+id/newsDescription" android:textColor="#212121"
+		android:layout_alignLeft="@+id/newsTitle" android:layout_below="@+id/newsTitle"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:singleLine="false" android:scrollHorizontally="false">
+	</TextView>
+
+</RelativeLayout>

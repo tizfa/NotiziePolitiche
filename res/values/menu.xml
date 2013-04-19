@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_party_read_all">Segna messaggi come letti</string>
+    <string name="menu_party_refresh">Cerca nuovi articoli</string>
+    <string name="menu_article_trash">Cestina</string>
+    <string name="menu_article_untrash">Togli dal cestino</string>
+    <string name="menu_article_share">Condividi</string>
+    
+    <!-- Options for article -->
+    <string name="menu_article_options_read_state">Stato articoli</string>
+    <string name="menu_article_options_state">Validità articoli</string>
+    <string name="menu_article_options_read_state_title">Stato degli articoli</string>
+    <string name="menu_article_options_read_state_read">Articoli letti</string>
+    <string name="menu_article_options_read_state_unread">Articoli non letti</string>
+    <string name="menu_article_options_read_state_both">Entrambi i tipi</string>
+    <string name="menu_article_options_state_title">Validità degli articoli</string>
+    <string name="menu_article_options_state_trashed">Articoli cestinati</string>
+    <string name="menu_article_options_state_untrashed">Articoli non cestinati</string>
+    
+    <!-- Options for party. -->
+    <string name="menu_party_options_refresh_all">Aggiorna tutti</string>
+     <string name="menu_party_options_search">Cerca news</string>
+    <string name="menu_party_options_quit">Esci</string>
+    <string name="menu_party_options_settings">Impostazioni</string>
+    <string name="menu_party_options_read_all">Segna tutti come letti</string>
+    
+</resources>

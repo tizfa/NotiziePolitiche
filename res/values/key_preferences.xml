@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="catRefreshData">Aggiornamento dati</string>
+	<string name="catArticlesHandling">Gestione degli articoli</string>
+	<string name="catInfo">Informazioni</string>
+
+	<!-- The key which gives the version of the application.  -->
+	<string name="keyApplicationVersion">APP_VERSION_KEY</string>
+	
+	<!-- The key which gives the interval between feeds update. The key value is a number of
+	 * minutes between two retrieve session.  -->
+	<string name="keyRetrieveFeedsInterval">RETRIEVE_FEEDS_INTERVAL_KEY</string>
+	<string name="retrieveFeedsInterval_title">Tempo aggiornamento</string>
+	<string name="retrieveFeedsInterval_summary">Ogni quanti minuti aggiornare i dati automaticamente</string>
+	
+	<!-- The key which gives the interval between feeds update. The key value is a number of
+	 * minutes between two retrieve session.  -->
+	<string name="keyRemoveExpiredInterval">REMOVE_EXPIRED_INTERVAL_KEY</string>
+	<string name="removeExpiredInterval_title">Tempo pulizia</string>
+	<string name="removeExpiredInterval_summary">Ogni quanti minuti rimuovere i dati scaduti (articoli e cache)</string>
+	
+	
+	<!-- The key which gives the number of days after which the data old than (currentDate minus
+	 * numberOfDays) will be deleted. -->
+	<string name="keyRemoveExpiredData">REMOVE_EXPIRED_DATA_KEY</string>
+	<string name="removeExpiredData_title">Scadenza articoli</string>
+	<string name="removeExpiredData_summary">Dopo quanti giorni dalla loro pubblicazione gli articoli scadono</string>
+	
+	<!-- The last time the data was refreshed for all parties. The time is expressed in
+	milliseconds from 1/1/1970 -->
+	<string name="keyLastTimeDataRefreshed">LAST_TIME_DATA_REFRESHED_KEY</string>
+	
+	<!-- The last time the expired data was removed. The time is expressed in
+	milliseconds from 1/1/1970 -->
+	<string name="keyLastTimeDataExpired">LAST_TIME_DATA_EXPIRED_KEY</string>
+	
+	
+	<!-- A boolean which indicates if the software feeds service should start at boot time. -->
+	<string name="keyStartServiceOnBoot">START_SERVICE_ON_BOOT_KEY</string>
+	<string name="startServiceOnBoot_title">Servizio al boot</string>
+	<string name="startServiceOnBoot_summary">Lancia il servizio di gestione dati al boot del dispositivo</string>
+	
+	
+	<!-- A boolean which indicates if the software should auto refresh data sources at
+	 specified interval time. -->
+	<string name="keyAutoRefreshData">AUTO_REFRESH_DATA_KEY</string>
+	<string name="autoRefreshData_title">Auto aggiornamento </string>
+	<string name="autoRefreshData_summary">Aggiorna i dati automaticamente ad intervallo di tempo prefissati</string>
+	
+	<!-- A boolean which indicates if the software should trash the expired articles even if
+	the articles is unread. -->
+	<string name="keyTrashExpiredArticlesNotRead">TRASH_EXPIRED_ARTICLES_NOT_READ_KEY</string>
+	<string name="trashExpiredArticlesNotRead_title">Elimina scaduti non letti</string>
+	<string name="trashExpiredArticlesNotRead_summary">Elimina gli articoli scaduti anche se non sono stati letti</string>
+	
+	<!-- A boolean which indicates if the software should show notification when new articles
+	are retrieved from the Web. -->
+	<string name="keyShowNotification">SHOW_NOTIFICATION_KEY</string>
+	<string name="showNotification_title">Mostra le notifiche</string>
+	<string name="showNotification_summary">Mostra un\'icona di notifica quando ci sono nuovi articoli da leggere</string>
+	
+	<string name="keyInfoCategory">INFO_CATEGORY_KEY</string>
+	
+	<string name="keyInfoOnSoftware">INFO_ON_SOFTWARE_KEY</string>
+	<string name="infoOnSoftware_title">Informazioni sul software</string>
+	
+	<string name="keyBuyFullVersion">BUY_FULL_VERSION_KEY</string>
+	<string name="buyFullVersion_title">Acquista \"%1$s\"</string>
+	
+	<string name="keyAspectStyle">ASPECT_STYLE_KEY</string>
+	<string name="aspectStyle_title">Modifica aspetto articoli</string>
+	<string name="aspectStyle_summary">Modifica l\'aspetto inerente alla visualizzazione degli articoli</string>
+	
+	<!-- The font size for article title -->
+	<string name="keyNewsArticleTitleFontSize">NEWS_ARTICLE_TITLE_FONT_SIZE_KEY</string>
+	<string name="newsArticleTitleFontSize_title">Font titolo articolo</string>
+	<string name="newsArticleTitleFontSize_summary">Imposta la dimensione del font per il titolo dell\'articolo</string>
+	
+	<!-- The font size for article description -->
+	<string name="keyNewsArticleDescriptionFontSize">NEWS_ARTICLE_DESCRIPTION_FONT_SIZE_KEY</string>
+	<string name="newsArticleDescriptionFontSize_title">Font descrizione news</string>
+	<string name="newsArticleDescriptionFontSize_summary">Imposta la dimensione del font per la descrizione dell\'articolo</string>
+	
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionName="1.0.6" android:versionCode="8" package="it.tizianofagni.notiziepolitiche">
+	<application android:icon="@drawable/icon" android:label="@string/app_name_full"
+		android:name="it.tizianofagni.notiziepolitiche.NotiziePoliticheApplication"
+		android:debuggable="false" android:theme="@style/CustomTheme">
+		<activity android:name="it.tizianofagni.notiziepolitiche.activity.CategoriesListActivity"
+			 android:launchMode="singleTop"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable"
+				android:resource="@xml/searchable" />
+		</activity>
+
+		<activity android:name="it.tizianofagni.notiziepolitiche.activity.NewsListActivity"
+			android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation">
+		</activity>
+
+		<activity android:name="it.tizianofagni.notiziepolitiche.activity.BrowseArticleActivity"
+			android:configChanges="keyboardHidden|orientation"
+			android:launchMode="singleTop">
+		</activity>
+
+		<activity android:name="it.tizianofagni.notiziepolitiche.activity.SettingsActivity"
+			android:launchMode="singleTop">
+		</activity>
+
+
+		<!-- android:process=":NotiziePoliticheService"> -->
+		<service android:name="it.tizianofagni.notiziepolitiche.service.FeedRetrieverService"
+			android:process=":NotiziePoliticheService">
+			<!-- <intent-filter> <action android:name="it.tizianofagni.notiziepolitiche.service.FeedRetrieverService" 
+				/> </intent-filter> -->
+		</service>
+
+		<receiver android:name="it.tizianofagni.notiziepolitiche.broadcast.BootBroadcastReceiver" android:process=":NotiziePoliticheService">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="it.tizianofagni.notiziepolitiche.service.RefreshAllReceiver"
+			android:enabled="true" android:process=":NotiziePoliticheService">
+		</receiver>
+		<receiver android:name="it.tizianofagni.notiziepolitiche.service.RemoveExpiredDataReceiver"
+			android:enabled="true" android:process=":NotiziePoliticheService">
+		</receiver>
+
+		<!-- The application's publisher ID assigned by AdMob -->
+		<meta-data android:value="a14d06331d0c89f" android:name="ADMOB_PUBLISHER_ID" />
+
+		<!-- AdMobActivity definition -->
+		<activity android:name="com.admob.android.ads.AdMobActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|keyboard|keyboardHidden" />
+		<!-- Track Market installs -->
+		<receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+
+		<meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
+
+	</application>
+	<uses-sdk android:minSdkVersion="4" />
+
+	<!-- Access to SD card -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+	<!-- Support for screens size -->
+	<supports-screens android:smallScreens="true" 
+                  android:normalScreens="true" 
+                  android:largeScreens="true" 
+                  android:anyDensity="true" />
+</manifest> 

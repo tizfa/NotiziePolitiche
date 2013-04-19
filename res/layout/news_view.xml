@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:myapp="http://schemas.android.com/apk/res/it.tizianofagni.notiziepolitiche"
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <include layout="@layout/info_no_items" android:id="@+id/infoItem"/>
+        
+        <ListView
+                android:id="@+id/newsListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1"
+                android:background="@drawable/shape_background_grey" android:cacheColorHint="#00000000"
+                android:divider="@drawable/listview_separator" android:dividerHeight="1dp">
+        </ListView>
+    	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/layout_news_ad" android:visibility="gone">
+
+		<com.admob.android.ads.AdView android:id="@+id/news_ad"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			myapp:backgroundColor="#000000" myapp:primaryTextColor="#FFFFFF"
+			myapp:secondaryTextColor="#CCCCCC" />
+
+	</LinearLayout>
+</LinearLayout>

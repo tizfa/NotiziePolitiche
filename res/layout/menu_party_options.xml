@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_party_options_refresh_all"
+          android:icon="@drawable/refresh_all"
+          android:title="@string/menu_party_options_refresh_all" />
+     <item android:id="@+id/menu_party_options_read_all"
+          android:icon="@drawable/article_read_all"
+          android:title="@string/menu_party_options_read_all" />
+    <item android:id="@+id/menu_party_options_search"
+          android:icon="@drawable/search"
+          android:title="@string/menu_party_options_search" />
+    <item android:id="@+id/menu_party_options_settings"
+          android:icon="@drawable/settings"
+          android:title="@string/menu_party_options_settings" />
+     <item android:id="@+id/menu_party_options_quit"
+          android:icon="@drawable/exit"
+          android:title="@string/menu_party_options_quit" />
+</menu>
